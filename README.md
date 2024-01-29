@@ -1,4 +1,4 @@
-# BWGuest
+# BW Guest
 Este projeto consiste em um sistema de autenticação de rede sem fio para a BorgWarner Brasil.
 
 Ele é projetado para ser usado internamente na empresa e atende às políticas de segurança estabelecidas, portanto, o acesso ao projeto é limitado.
