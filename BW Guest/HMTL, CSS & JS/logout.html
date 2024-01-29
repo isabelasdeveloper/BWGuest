@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta charset="UTF-8">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="logout_stylesheet.css">
+    <title>Desconectar-se do BW Guest</title>
+  </head>
+
+  <header>
+    <div>
+       <img src="img/logo3_preta.png" alt="Logo BorgWarner no cabeçalho" width="250px">
+    </div>
+    
+ </header>
+
+<body>
+  <div class="container_logout">
+    <h1>Sessão expirada!</h1>
+      <FORM method="post" ACTION="/logout.html">
+      <p><script>
+          document.write('<input type="submit" class="botao" value="Logout" onclick="document.forms[0].submit()">');
+      </script></p>
+      <INPUT TYPE="hidden" NAME="userStatus" SIZE="16" MAXLENGTH="15" VALUE="1">
+      <INPUT TYPE="hidden" NAME="err_flag" SIZE="16" MAXLENGTH="15" VALUE="0">
+      <INPUT TYPE="hidden" NAME="err_msg" SIZE="32" MAXLENGTH="31" VALUE="">
+      </FORM>
+  </div> 
+</form>
+</body>
+</html>

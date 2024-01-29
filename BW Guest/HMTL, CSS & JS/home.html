@@ -1,0 +1,37 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta charset="UTF-8">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <title>Bem-Vindo à BorgWarner</title>
+</head>
+
+<header>
+    <div>
+       <img src="img/logo3_preta.png" alt="Logo BorgWarner no cabeçalho" width="250px">
+    </div>
+ </header>
+
+ <body onload="loadAction();"> <form class="form" method="post"> <input TYPE="hidden" NAME="buttonClicked" SIZE="16" MAXLENGTH="15" value="0"> <input TYPE="hidden" NAME="redirect_url" SIZE="255" MAXLENGTH="255" VALUE=""> <input TYPE="hidden" NAME="err_flag" SIZE="16" MAXLENGTH="15" value="0">
+      <div class="box_login">
+         <img src="img/login_branco.png" width="90em">
+         <h2>BEM-VINDO À BORGWARNER</h2>
+         <input class="input_user" type="text" name="username" value="">
+         <input class="input_password" type="password" name="password" size="25" maxlength="63" value="">
+         <form class="loginForm">
+            <div class="checkbox-container">
+               <input type="checkbox" id="termsCheckbox" class="checkbox">
+               <label for="termsCheckbox" class="terms-text">
+                     Eu concordo com os <a href="aup.html" class="terms-link" target="_blank">Termos e Condições</a>
+               </label>
+            </div>
+         </form>
+         <p><input class="botao" type="button" name="Submit" value="LOGIN" class="button"></p>
+         <p id="errorMessage"></p>
+      </div>
+</form>
+</body>
+</html>

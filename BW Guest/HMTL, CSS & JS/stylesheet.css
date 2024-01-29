@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --blue: #2efad9;
+    --dark_blue: #051729;
+    --medium_blue: #1c8d84;
+    --white: #ffffff; 
+} 
+
+#errorMessage {
+    margin-top: 0.5em;
+    font-size: 14px;
+    font-weight: 500;
+    color: red;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Regular.ttf') format('truetype');
+    src: url('Montserrat-Bold.ttf') format('truetype');
+    src: url('Montserrat-Light.ttf') format('truetype');
+    src: url('Montserrat-SemiBold.ttf') format('truetype');
+    src: url('Montserrat-Medium.ttf') format('truetype');
+  }
+
+header {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    padding: 20px; 
+    text-align: left;
+}
+
+header img {
+    margin-left: 1em;
+}
+
+body {
+    font-family: 'Montserrat';
+    display: grid;
+    grid-template-columns: 100%;
+    background-image: url(img/bg_energia.jpg);
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.box_login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(5, 23, 41, 0.8);
+    border-radius: 15px;
+    width: 45em;
+    height: 35em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box_login img {
+    margin-bottom: 2em;
+}
+
+.box_login h2 {
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 1em;
+}
+
+.input_user {
+    border-style:groove;
+    margin: 1em;
+    border-color: var(--white);
+    border-radius: 0.5em;
+    border-width: 0.2em;
+    border-style: solid;
+    background-image: url('useruser.png'); /* Substitua pelo caminho do seu ícone de usuário */
+    background-repeat: no-repeat;
+    background-position: 10px 50%;
+    background-color: transparent;
+    width: 27em;
+    height: 3.8em;
+    padding: 0.5em;
+    padding-left: 3em;
+}
+
+.input_password {
+    border-style:groove;
+    margin: 1em;
+    border-color: var(--white);
+    border-radius: 0.5em;
+    border-width: 0.2em;
+    border-style: solid;
+    background-image: url('lock.png'); /* Substitua pelo caminho do seu ícone de usuário */
+    background-repeat: no-repeat;
+    background-position: 10px 50%;
+    background-color: transparent;
+    width: 27em;
+    height: 3.8em;
+    padding: 0.5em;
+    padding-left: 3em;
+}
+
+.input_user:focus {
+   outline: none;
+}
+
+.input_password:focus {
+    outline: none;
+ }
+
+input[type="text"] {
+    color: var(--white);
+    font-weight: 700;
+    font-family: 'Montserrat';
+}
+
+input[type="password"] {
+    color: var(--white);
+    font-weight: 700;
+    font-family: 'Montserrat';
+}
+
+.botao {
+    width: 27em;
+    height: 3.8em;
+    padding: 0.5em;
+    background-color: var(--white);
+    border-color: transparent;
+    border-radius: 0.5em;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    margin-top: 2em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: transform 0.2s ease;
+    font-weight: 700;
+}
+
+.botao:hover {
+    background-color: var(--dark_blue);
+    color: var(--white);
+}
+
+.botao:active {
+    transform: scale(1.05);
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin: 1em;
+}
+
+.checkbox {
+    margin-right: 0.5em;
+}
+
+.terms-text {
+    justify-content: center;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.terms-link {
+    color: #2efad9;
+}
+
+@media only screen and (max-width: 700px) {
+
+    header {
+        opacity: 0;
+        margin: 0;
+        padding: 0;
+      }
+    
+    body {
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .box_login {
+        width: 90%;
+    }
+
+    .box_login h2 {
+        width: 10em;
+        max-width: 10em;
+        font-weight: 500;
+        text-align: center;
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .input_user {
+        background-color: rgb(5, 23, 41, 0.5);
+        width: 90%;
+    }
+
+    .input_password {
+        background-color: rgb(5, 23, 41, 0.5);
+        width: 90%;
+    }
+
+    .checkbox-container {
+        display: inline-block;
+        margin-top: 1em;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        width: 20em;
+    }
+
+    .checkbox {
+       margin: 0;
+    }
+
+    .terms-text {
+        font-size: 18px;
+    }
+
+    .botao {
+        width: 20em;
+    }
+    
+
+
+
+
+}
+

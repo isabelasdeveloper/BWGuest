@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --blue: #2efad9;
+    --dark_blue: #051729;
+    --medium_blue: #1c8d84;
+    --white: #ffffff; 
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Regular.ttf') format('truetype');
+    src: url('Montserrat-Bold.ttf') format('truetype');
+    src: url('Montserrat-Light.ttf') format('truetype');
+    src: url('Montserrat-SemiBold.ttf') format('truetype');
+    src: url('Montserrat-Medium.ttf') format('truetype');
+  }
+
+header {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    padding: 20px; 
+    text-align: left;
+}
+
+header img {
+    margin-left: 1em;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Montserrat';
+    margin: 0;
+    background-image: url(img/bg_energia.jpg);
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.container_erro {
+    margin-top: 5em;
+    text-align: center;
+    background-color: rgb(5, 23, 41, 0.8);
+    border-radius: 1.5em;
+    width: 60em;
+    height: 35em;
+    padding-top: 4em;
+    margin-bottom: 2em;
+}
+
+.container_erro img {
+    margin-top: 2em;
+    margin-bottom: 3em;
+    width: 250px;
+}
+
+.error_connect {
+    width: 20em;
+    text-align: center;
+}
+
+.titulo {
+    font-weight: 500;
+    color: var(--white);
+    text-align: center;
+ }
+
+.texto {
+    color: var(--white);
+    margin-top: 1em;
+    text-align: center;
+    padding: 1em;
+    font-size: 20px;
+}
+
+.subtexto {
+    font-weight: 500;
+    color: var(--white);
+    font-size: 18px;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    header {
+        opacity: 0;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-y: hidden;
+    }
+
+    .container_erro {
+        position: absolute;
+        top: 50%;
+        transform: translatey(-50%);
+        margin: 0;
+        width: 90%;
+    }
+
+    .error_connect {
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        margin: 0;
+        text-align: center;
+        font-size: 27px;
+    }
+    
+    .container_erro img {
+        margin-top: 8em;
+        margin-bottom: 5em;
+        width: 200px;
+    }
+
+    .titulo {
+        padding-bottom: 1em;
+        margin: 0;
+     }
+
+    .texto {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 15em;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .subtexto {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 15em;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+    }
+
+    
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+

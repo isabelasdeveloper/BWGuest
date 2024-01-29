@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --blue: #2efad9;
+    --dark_blue: #051729;
+    --medium_blue: #1c8d84;
+    --white: #ffffff; 
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Regular.ttf') format('truetype');
+    src: url('Montserrat-Bold.ttf') format('truetype');
+    src: url('Montserrat-Light.ttf') format('truetype');
+    src: url('Montserrat-SemiBold.ttf') format('truetype');
+    src: url('Montserrat-Medium.ttf') format('truetype');
+  }
+
+header {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    padding: 20px; 
+    text-align: left;
+}
+
+header img {
+    margin-left: 1em;
+}
+
+body {
+    text-align: center;
+    font-family: 'Montserrat';
+    margin: 0;
+    background-image: url(img/bg_energia.jpg);
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.container_logout {
+    justify-content: center;
+    height: 50%;
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #051729cc;
+    border-radius: 1.5em;
+    
+}
+
+.container_logout h1 {
+    margin: 2em 0 1em 0;
+    color: var(--white);
+    font-weight: 400;
+    text-align: center;
+    font-size: 25px;
+}
+
+.container_logout img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+}
+
+.botao {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--white);
+    margin-top: 15em;
+    font-weight: 700;
+    text-decoration: double;
+    color: var(--dark_blue);
+    border-radius: 1vh;
+    border-color: transparent;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.botao:hover {
+    background-color: var(--dark_blue);
+    color: var(--white);
+}
+
+.botao:active {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px) {
+
+    header {
+        opacity: 0;
+        margin: 0;
+        padding: 0;
+      }
+
+    body {
+        overflow-y: hidden;
+    }
+
+    .container_logout {
+        height: 30em;
+        width: 90%;
+    }
+
+    .botao {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    }
