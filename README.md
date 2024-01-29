@@ -1,21 +1,24 @@
-# BW Guest
-Este projeto consiste em um sistema de autenticação de rede sem fio para a BorgWarner Brasil.
+# BorgWarner Guest Wi-Fi Authentication System
+This project consists of a wireless network authentication system for BorgWarner Brasil.
+It is designed for internal use within the company and complies with established security policies, thus access to the project is limited.
 
-Ele é projetado para ser usado internamente na empresa e atende às políticas de segurança estabelecidas, portanto, o acesso ao projeto é limitado.
+## Features
+The system provides the following features:
 
-## Funcionalidades
+## User Authentication:
 
-O sistema oferece as seguintes funcionalidades:
+Users can access the Wi-Fi network through an authentication process.
+Authentication is performed using a specific username and password.
 
-1. **Autenticação de Usuário:**
-   - Os usuários podem acessar a rede Wi-Fi por meio de um processo de autenticação.
-   - A autenticação é realizada utilizando um nome de usuário e senha específicos.
+## Integration with BorgWarner Network:
 
-2. **Integração com a Rede BorgWarner:**
-   - Projetado para integrar-se perfeitamente à infraestrutura de rede da BorgWarner.
-   - Especificamente configurado para atender às necessidades de autenticação de convidados na rede Wi-Fi.
+Designed to seamlessly integrate with the BorgWarner network infrastructure.
+Specifically configured to meet the authentication needs of guests on the Wi-Fi network.
 
-## Contato
+## Contact
+Isabelasdeveloper@gmail.com
+Alvesisabela020@gmail.com
 
- - isabelasdeveloper@gmail.com
- - alvesisabela020@gmail.com
+Note: Ensure compliance with all company security policies when using this project. Access to the project is restricted due to security considerations.
+
+Thank you for your time!
